@@ -1,0 +1,274 @@
+:root
+{
+    --main-bg-color: #021B2C;
+    --secondary-color: #FCB040;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--main-bg-color); 
+    background-color: var(--main-bg-color);
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+
+header
+{
+    padding: 0;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.809);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar
+{
+    background: rgba(0, 0, 0, 0.386);
+    top: 0;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+ video
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+ }
+
+ .header-text
+ {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .header-text > h1
+ {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    text-align: center;
+ }
+
+ .header-text > p
+ {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+ }
+
+.header-text> strong
+ {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+ }
+
+ .call-search
+ {
+    background-color: var(--main-bg-color);
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    transition: .8s ease-in-out;
+ }
+
+ .call-search:hover
+ {
+    background-color: var(--secondary-color);
+ }
+
+ /* ------------------------------------ End of Header ---------------------------------- */
+
+ .resource-container
+ {
+    border-top: 2rem solid var(--secondary-color);
+    border-bottom: 2rem solid var(--secondary-color);
+    padding: 3rem 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .resource
+ {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+ }
+
+ .resource-card
+ {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+ }
+
+ .resource-card-img
+ {
+    width: 100%;
+    height: 40%;
+ }
+
+ .card-img
+ {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+ }
+
+ .resource-card-title
+ {
+    font-weight: 900;
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+ }
+
+ .resource-card-body
+ {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+    height: 25%;
+    display: flex;
+    align-items: center;
+ }
+
+ .resource-card-footer
+ {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 1rem;
+    padding: 20px 10px;
+    align-items: center;
+ }
+
+ .resource-socials
+ {
+    display: flex;
+    gap: 2rem;
+ }
+
+ .resource-socials > a
+ {
+    font-size: 20px;
+    color: var(--secondary-color);
+    cursor: pointer;
+ }
+
+
+ .fa-phone, .contact
+ {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+ }
+
+ span > p
+ {
+    font-size: 10px;
+ }
+ .resource-btn
+ {
+    background-color: var(--main-bg-color);
+    padding: 5px 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: .8s ease-in-out;
+    cursor: pointer !important;
+    text-decoration: none;
+    width: 50%;
+ }
+ .resource-btn:hover
+ {
+    background-color: var(--secondary-color);
+ }
+
+ @media screen and (max-width:767px)
+ {
+
+   .header-text
+   {
+      width: 80%;
+   }
+   .resource-container
+   {
+      background-color: #021B2C;
+      gap: 2rem;
+   }
+   .resource
+   {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .resource-card
+   {
+      width: 90%;
+      background-color: white;
+   }
+ }
+
+ @media screen and (min-width:768px) and (max-width:1023px) 
+{
+   .resource-container
+   {
+      background-color: #021B2C;
+      gap: 2rem;
+   }
+   .resource
+   {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .resource-card
+   {
+      width: 50%;
+      background-color: white;
+   }
+}

@@ -1,0 +1,287 @@
+:root
+{
+    --main-bg-color: #021B2C;
+    --secondary-color: #FCB040;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--main-bg-color); 
+    background-color: var(--main-bg-color);
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+
+header
+{
+    padding: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.49);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar
+{
+    background: rgba(0, 0, 0, 0.386);
+    top: 0;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+ video
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+ }
+
+ .header-text
+ {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .header-text > h1
+ {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    text-align: center;
+ }
+
+ .header-text > p
+ {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+ }
+
+.header-text> strong
+ {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+ }
+
+
+ .call-search
+ {
+    background-color: var(--main-bg-color);
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    transition: .8s ease-in-out;
+ }
+
+ .call-search:hover
+ {
+    background-color: var(--secondary-color);
+ }
+
+ .featured-header
+ {
+    text-decoration: none !important;
+ }
+
+
+/* Body */
+
+.featured-header
+{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #FCB040;
+    text-underline-offset: 1rem;
+    width: 100%;
+    margin:0 auto 3rem;
+    color: white;
+}
+
+.featured-properties-container
+{
+    background-color: var(--main-bg-color);
+    border-top: 3rem solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem 0;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.card-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.card-footer
+{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--secondary-color);
+    align-items: center;
+    padding: 1rem 0 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-img{
+    height: 60%;
+}
+
+.listing-btn
+{
+    width: 50%;
+    background-color: var(--secondary-color);
+    transition: background-color .5s ease-out;
+}
+
+.listing-btn:hover
+{
+    background-color: var(--main-bg-color);
+}
+/* At media */
+@media screen and (max-width:767px)
+{
+
+    .wrap
+    {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+
+    .featured-properties-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-header
+    {
+        width: 100%;
+    }
+
+    .card 
+    {
+        width: 90%;
+    }
+
+    .wrap 
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) 
+{
+
+    .card-footer
+    {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .featured-properties-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-header
+    {
+        width: 100%;
+    }
+
+    .card 
+    {
+        width: 90%;
+    }
+
+    .wrap 
+    {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    /* Footer */
+
+    .contact-form
+    {
+        width: 60% !important;
+    }
+
+    .copyright
+    {
+        gap: 20px;
+        padding: 20px;
+    }
+}

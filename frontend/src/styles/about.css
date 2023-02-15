@@ -1,0 +1,373 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+:root
+{
+    --main-bg-color: #021B2C;
+    --dark-transparency: #01121e5a;
+    --secondary-color: #FCB040;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--main-bg-color); 
+    background-color: var(--main-bg-color);
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
+
+
+header
+{
+    height: 100vh;
+    background:linear-gradient( rgba(0, 0, 0, 0.635) 100%, rgba(0, 0, 0, 0.5)100%),url(../images/about/fam2_Edited.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar
+{
+    position: relative !important;
+    background-color: var(--dark-transparency);
+    width: auto;
+    height: 10%;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.logo
+{
+    width: 100px;
+}
+
+.header-text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    color: white;
+}
+
+.header-text > p
+{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.header-text > h1
+{
+    font-size: 5rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.header-text > strong
+{
+    font-size: 20px;
+
+}
+.call-search
+ {
+    background-color: var(--main-bg-color);
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    transition: .8s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+ }
+
+ .thrive
+ {
+    background-color: var(--secondary-color);
+ }
+
+ .call-search:hover
+ {
+    background-color: var(--secondary-color);
+ }
+
+ .thrive:hover
+ {
+    background-color: var(--main-bg-color);
+ }
+
+ /* ------------------------------ End of Header Section ---------------------------- */
+
+
+ .about-container
+ {
+    border-top: 3rem solid var(--secondary-color);
+    background-color: var(--main-bg-color);
+    padding: 0 0 1rem;
+ }
+
+ .img-container
+ {
+    display: flex;
+    background-color: var(--main-bg-color);
+    color: white;
+ }
+
+ .img
+ {
+    width: 50%;
+    height: 20%;
+ }
+
+
+ .about-img
+ {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid var(--secondary-color);
+ }
+
+ .melissa-img
+ {
+    border: none;
+ }
+
+ .about-text
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    border-bottom: 2px solid var(--secondary-color);
+ }
+
+
+ .melissa
+ {
+    border: none;
+ }
+
+
+ .text
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+ }
+
+ hr
+ {
+    color: var(--secondary-color);
+    width: 50%;
+    margin: 5px auto;
+    border: 1px solid var(--secondary-color);
+ }
+
+ .text > p
+ {
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+ }
+
+ .text > h1
+ {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--secondary-color);
+ }
+
+ span p
+ {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 5px;
+ }
+
+ .action-btn
+ {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ footer
+ {
+    border-top: 3rem solid var(--secondary-color);
+ }
+
+ /* ------------------------------End of Body --------------------------------- */
+
+ @media screen and (max-width:767px)
+{
+
+    .header-text
+    {
+        position: absolute;
+        left: 17%;
+        top: 10%;
+        z-index: 1;
+    }
+
+    .header-text > h1
+    {
+        font-size: 30px;
+    }
+
+    .header-text > p
+    {
+        font-size: 20px;
+    }
+
+    .about-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        padding:5rem 0px;
+    }
+    .img-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text
+    {
+        border: none;
+    }
+
+    .text > h1
+    {
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    .text > p
+    {
+        width: 95%;
+    }
+
+    .img-container:nth-child(2)
+    {
+        flex-direction: column-reverse;
+    }
+    .img
+    {
+        width: 100%;
+    }
+
+    .about-img
+    {
+        border: none;
+    }
+
+    .thrive
+    {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1612px) 
+{
+
+    .header-text
+    {
+        position: absolute;
+        left: 40%;
+        top: 10%;
+        z-index: 1;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header-text > h1
+    {
+        font-size: 30px;
+    }
+
+    .header-text > p
+    {
+        font-size: 20px;
+    }
+
+    .about-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        padding:5rem 0px;
+    }
+    .img-container
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-text
+    {
+        border: none;
+    }
+
+    .text > h1
+    {
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    .text > p
+    {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    .img-container:nth-child(2)
+    {
+        flex-direction: column;
+    }
+    .img
+    {
+        width: 100%;
+    }
+
+    .about-img
+    {
+        border: none;
+    }
+
+    .action-btn
+    {
+        margin-bottom: 2rem;
+    }
+}
+
