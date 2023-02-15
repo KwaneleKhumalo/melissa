@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/fontawesome-free-6.2.1-web/css/all.min.css">
+
+    <link rel="stylesheet" href="./src/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./src/styles/nav.css">
+    <link rel="stylesheet" href="./src/styles/about.css">
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./src/materialize/js/materialize.min.js" defer></script>
+
+    <script defer src="./src/scripts/mail.js"></script>
+    <script defer src="./src/scripts/nav.js"></script>
+    <title>Melissa Shields|| About</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-items-left">
+                <a href="index.html">
+                    <img src="./src/images/logo/Logo-white.png" alt="Melissa Shields Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-items-right">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="listings.html">PROPERTY LISTINGS</a>
+                <a href="resources.html">HELPFUL RESOURCES</a>
+            </div>
+        </div>
+        <div class="nav-items-hamburger">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-regular fa-circle-xmark close"></i>
+        </div>       
+        <div class="header-text">
+            <p>Bitterroot Valley & Beyond</p>
+            <h1>Melissa Shields</h1>
+            <strong>Real Estate Broker</strong>
+            <a href="listings.html" class="call-search">Search Listings</a>
+        </div>
+    </header>
+
+    <section class="about-container">
+        <div class="img-container">
+            <div class="img">
+                <img class="about-img" src="./src/images/about/crew-transformed.png" alt="">
+            </div>
+            <div class="about-text">
+                <div class="text">
+                    <h1>Meet my Crew!</h1>
+                    <p>Well, how about we start here!</p>
+                    <p>This is my support, my circle, my "CREW"... My family! Yup! I have a big family. My husband (Owner of Shields Electric) I absolutely enjoy time spent with the crew! So, outside of all the work we do, we play as often as time affords us the ability to.</p>
+
+                    <p>We live in a Beautiful state. From time-to-time, the crew goes out to explore this beauty in its essence. We enjoy Dirt Biking, side-by-siding, camping. Sometimes there's a debate about whether skiing is better than snowboarding! Whatever we settle on, we enjoy it all!</p>
+                </div>
+                <hr>
+
+                <div class="action-btn">
+                    <a class="call-search thrive" href="https://www.facebook.com/eshieldselectric/">Shields Electric</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <div class="about-text melissa">
+                <div class="text">
+                    <h1>Who's Melissa Shields?<span>
+                        <p>Many Hats? Understatement!</p>
+                    </span></h1>
+                    <p>Mom, Wife, Board Member, Community Member, Contributor, Business Owner, Life Coach, Broker! Yeah... Understatement!</p>
+
+                    <p>The truth is, I've been serving the Bitterroot Valley and Surrounding Communities for over 10 years. As your broker, I am a community member first, looking out for your best interests at heart. My goal goes beyond just securing your next house, I aim to find you a home!</p>
+
+                    <p>I am invested in my community because I am invested in you! I aspire to help you expand your investments as a homeowner and a community member. I do so by further providing detailed, helpful and inspiring life coaching sessions to help you thrive and embrace your worthiness to enhance your potential and maximize your abilities!</p>
+                </div>
+                <hr>
+                <div class="action-btn">
+                    <a class="call-search thrive" href="https://www.thrivingwithmelissa.com/">Thrive With Me!</a>
+                    <a class="call-search thrive" href="index.html">Find My Listings</a>
+                </div>
+            </div>
+            <div class="img">
+                <img class="about-img melissa-img" src="./src/images/about/smiles-transformed.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact-form-container z-depth-5">
+        <div class="contact-form-header">
+            <h1>Let's Connect</h1>
+        </div>
+        <form class="contact-form" method="post" autocomplete="off">
+            <div class="input-field">
+                <label for="name">Name</label>
+                <input class="name" name="name" type="text" id="input_text" data-length="50" >
+            </div>
+            <div class="input-field">
+                <label for="name">Email</label>
+                <input class="email" name="email" type="email" id="input_text" data-length="50">
+            </div>
+            <div class="input-field">
+                <label for="name">Your Message</label>
+                <textarea name="message" id="textarea2" class="materialize-textarea message" data-length="100"></textarea>
+            </div>
+
+            <div class="mail-message-container">
+                <strong class="mail-message"></strong>
+            </div>
+            <button type="submit" class="footer-btn waves-effect btn">SUBMIT</button>
+        </form>
+
+        <div class="copyright">
+            <p>Melissa Shields Montana</p>
+            <p>Website Developed by Digital Circle</p>
+            <p class="copyright-text"></p>
+        </div>
+    </footer>
+</body>
+</html>

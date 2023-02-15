@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./src/materialize/css/materialize.min.css">
+
+    <link rel="stylesheet" href="./src/styles/home.css">
+    <link rel="stylesheet" href="./src/styles/slide.css">
+    <link rel="stylesheet" href="./src/styles/nav.css">
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./src/materialize/js/materialize.min.js" defer></script>
+    <script defer src="./src/scripts/home.js" defer></script>
+    <script defer src="./src/scripts/slide.js" defer></script>
+    <script defer src="./src/scripts/nav.js"></script>
+    <script defer src="./src/scripts/mail.js"></script>
+    <!-- <script defer src="//code.tidio.co/phsjjtctblo1xi7r3cixsnbgrom2y9t6.js" async></script> -->
+    <title>Melissa Shields| Bitterroot Real Estate Agent</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-items-left">
+                <a href="index.html">
+                    <img src="./src/images/logo/Logo-white.png" alt="Melissa Shields Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-items-right">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="listings.html">PROPERTY LISTINGS</a>
+                <a href="resources.html">HELPFUL RESOURCES</a>
+            </div>
+        </div>
+        <div class="nav-items-hamburger">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-regular fa-circle-xmark close"></i>
+        </div>
+
+        <video class="" muted autoplay loop>
+            <source src="./src/video/background_video.mp4" type="video/mp4">
+        </video>
+        
+        <div class="header-text">
+            <p>Bitterroot Valley & Beyond</p>
+            <h1>Melissa Shields</h1>
+            <strong>Real Estate Broker</strong>
+            <a href="listings.html" class="call-search">Search Listings</a>
+        </div>
+    </header>
+
+    <section class="featured-properties-container">
+    <h4 class="featured-header">Featured Properties</h4>
+
+        <div class="card-container">
+
+        </div>
+    </section>
+
+<!-- Side -->
+    <section aria-label="Newest Photos">
+        <div class="carousel reviews" data-carousel>
+            <i class="fa-solid fa-circle-chevron-right carousel-button next"data-carousel-button="next"></i>
+          
+            <i class="fa-solid fa-circle-chevron-left carousel-button prev"data-carousel-button="prev"></i>
+        
+          <ul data-slides>
+            <li class="slide" data-active>
+                <div class="review-overlay">
+                    <h4> Jessica Bain </h4>
+                    <p>If you are looking a realtor who knows the area and will spend the time finding the perfect place to fit your needs, Melissa is definitely the one to call. </p>
+                </div>
+            </li>
+    
+            <li class="slide">
+                <div class="review-overlay">
+                    <h4>Wendi Fawns</h4>
+                    <p>Her ability to find and show the property to potential buyers was excellent and her ability to market the property helped make the sale of the property go smoothly in a timely manner.  I recommend her without hesitation.
+                    </p>
+                </div>
+            </li>
+    
+            <li class="slide">
+              <div class="review-overlay">
+                    <h4>Nicole Rainwater</h4>
+                    <p> Melissa was so helpful when buying our first home. She made sure to listen to our needs and always kept our best interest in mind. I really felt that she had our backs throughout the entire process and was so generous with her time and finances.</p>
+                </div>
+            </li>
+            
+          </ul>
+
+        </div>
+      </section>
+
+
+    <section class="wrap">
+        <div class="wrap-left">
+            <h6>Looking to Sell Or Buy a Home?</h6>
+            <p>I can help you streamline the process and find a beautiful home!</p>
+        </div>
+    </section>
+
+
+    <footer class="contact-form-container z-depth-5">
+        <div class="contact-form-header">
+            <h1>Let's Connect</h1>
+        </div>
+        <form class="contact-form" method="post" autocomplete="off">
+            <div class="input-field">
+                <label for="name">Name</label>
+                <input class="name" name="name" type="text" id="input_text" data-length="50" >
+            </div>
+            <div class="input-field">
+                <label for="name">Email</label>
+                <input class="email" name="email" type="email" id="input_text" data-length="50">
+            </div>
+            <div class="input-field">
+                <label for="name">Your Message</label>
+                <textarea name="message" id="textarea2" class="materialize-textarea message" data-length="100"></textarea>
+            </div>
+            <div class="mail-message-container">
+                <strong class="mail-message"></strong>
+            </div>
+
+            <button type="submit" class="footer-btn waves-effect btn">SUBMIT</button>
+        </form>
+
+        <div class="copyright">
+            <p>Melissa Shields Montana</p>
+            <p>Website Developed by Digital Circle</p>
+            <p class="copyright-text"></p>
+        </div>
+    </footer>
+
+</body>
+</html>

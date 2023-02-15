@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./src/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/styles/property.css">
+    <link rel="stylesheet" href="./src/styles/nav.css">
+
+    <script src="./node_modules/axios/dist/axios.min.js" defer></script>
+    <script src="./src/scripts/property.js" defer></script>
+    <script src="./src/bootstrap-5.0.2-dist/js/bootstrap.min.js" defer></script>
+    <script src="./src/scripts/nav.js" defer></script>
+    <script src="./src/scripts/mail.js" defer></script>
+    <title>Property</title>
+</head>
+<body>
+    <header class="carousel slide" data-bs-ride="carousel" style="height: 100vh;">
+            <div class="navbar">
+                <div class="nav-items-left">
+                    <a href="index.html">
+                        <img src="./src/images/logo/Logo-white.png" alt="Melissa Shields Logo" class="logo">
+                    </a>
+                </div>
+                <div class="nav-items-right">
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="listings.html">PROPERTY LISTINGS</a>
+                    <a href="resources.html">HELPFUL RESOURCES</a>
+                </div>
+            </div>
+            <div class="nav-items-hamburger">
+                <i class="fa-solid fa-bars open"></i>
+                <i class="fa-regular fa-circle-xmark close"></i>
+            </div>
+        <div class="carousel-inner header-slide" style="height: 100vh; position: absolute; top: 0;">
+
+            <div class="carousel-item active">
+                <img src="" alt="slide" class="d-block w-100 active-img">
+            </div>
+
+            
+        </div>
+    </header>
+
+    <div class="property-wrap">
+        <div class="wrap-heading">
+            <h1 class="property-status"></h1>
+            <strong class="property-address"></strong>
+        </div>
+        <div class="property-summary">
+            <div class="property-summary-item">
+                <i class="fa-solid fa-bed"></i>
+                <strong class="beds"></strong>
+            </div>
+
+            <div class="property-summary-item">
+                <i class="fa-solid fa-bath"></i>
+                <strong class="baths"></strong>
+            </div>
+
+            <div class="property-summary-item">
+                <i class="fa-solid fa-house-chimney-window"></i>
+                <strong class="type"></strong>
+            </div>
+
+            <div class="property-summary-item">
+                <i class="fa-solid fa-panorama"></i>
+                <strong class="size"></strong>
+            </div>
+
+            <div class="property-summary-item">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <strong class="price"></strong>
+            </div>
+
+            <div class="property-directions">
+                <div class="property-summary-item">
+                    <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
+                    <strong class="directions"></strong>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="property-description">
+        <h5 class="location"></h5>
+        <p class="description"></p>
+    </div>
+
+    <section class="carousel slide body-slide" data-bs-ride="true">
+        <div id="carousel-controls" class="carousel slide" data-bs-ride="carousel" style="height: 100%;">
+
+            <div class="carousel-inner body-carousel-inner"style="height: 100%;">
+                <div class="carousel-item active body-active">
+
+                </div>
+            </div>
+
+            <button class=" carousel-control-prev" type="button" data-bs-target="#carousel-controls" data-bs-slide="prev">
+                <i class="fa-solid fa-angle-left carousel-control-prev-icon" aria-hidden="true"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-controls" data-bs-slide="next">
+                <i class="fa-solid fa-angle-right carousel-control-next-icon" aria-hidden="true"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+
+    </section>
+
+
+    <section class="wrap">
+        <div class="wrap-left">
+            <h6>Interested in this Home?</h6>
+            <p>Let's meet for a showing!</p>
+        </div>
+    </section>
+
+    <footer class="contact-form-container z-depth-5">
+        <div class="contact-form-header">
+            <h1>Let's Connect</h1>
+        </div>
+        <form class="contact-form" method="post" autocomplete="off">
+            <div class="input-field">
+                <label for="name">Name</label>
+                <input class="name" name="name" type="text" id="input_text" data-length="50" >
+            </div>
+            <div class="input-field">
+                <label for="name">Email</label>
+                <input class="email" name="email" type="email" id="input_text" data-length="50">
+            </div>
+            <div class="input-field">
+                <label for="name">Your Message</label>
+                <textarea name="message" id="textarea2" class="materialize-textarea message" data-length="100"></textarea>
+            </div>
+
+            <div class="mail-message-container">
+                <strong class="mail-message"></strong>
+            </div>
+            <button type="submit" class="footer-btn waves-effect btn">SUBMIT</button>
+        </form>
+
+        
+        <div class="copyright">
+            <p>Melissa Shields Montana</p>
+            <p>Website Developed by Digital Circle</p>
+            <p class="copyright-text"></p>
+        </div>
+    </footer>
+
+</body>
+</html>

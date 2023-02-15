@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/nav.css">
+    <link rel="stylesheet" href="./src/styles/listings.css">
+    <link rel="stylesheet" href="./src/materialize/css/materialize.min.css">
+
+    
+    <script defer src="./src/materialize/js/materialize.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="./node_modules/axios/dist/axios.min.js"></script>
+    <script defer src="./src/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script defer type="module" src="./src/scripts/listings.js"></script>
+    <script defer src="./src/scripts/nav.js"></script>
+    <script defer src="./src/scripts/mail.js"></script>
+    <title>Listings</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-items-left">
+                <a href="index.html">
+                    <img src="./src/images/logo/Logo-white.png" alt="Melissa Shields Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-items-right">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="listings.html">PROPERTY LISTINGS</a>
+                <a href="resources.html">HELPFUL RESOURCES</a>
+            </div>
+        </div>
+        <div class="nav-items-hamburger">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-regular fa-circle-xmark close"></i>
+        </div>
+        <video class="" muted autoplay loop>
+            <source src="./src/video/background_video.mp4" type="video/mp4">
+        </video>
+        
+        <div class="header-text">
+            <p>Bitterroot & Beyond</p>
+            <h1>Melissa Shields</h1>
+            <strong>Real Estate Broker</strong>
+        </div>
+    </header>
+
+    
+
+    <section class="search-container">
+        <form class="search-feature">
+            <div class="input-fields">
+                <input name="citySearch" type="search" class="search" placeholder="search by city or town" autocomplete="off">
+            </div>
+
+
+            <button data-target="modal1" type="submit" class="btn search-btn waves-effect waves-light modal-trigger" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+        </form>
+        <div class="message">
+            <strong class="message-text"></strong>
+            <span class="message-span"></span>
+        </div>
+
+    </section>
+
+    <section class="card-group suggested-listings">
+
+    </section>
+
+    <section class="card-group result-container">
+        
+       
+    </section>
+ 
+    <section class="pagination-container Page navigation">
+        <strong class="total-pages"></strong>
+        <div id="pagination-link">
+        </div>
+    </section>
+
+    <section class="wrap">
+        <div class="wrap-left">
+            <h6>Looking to Sell Or Buy a Home?</h6>
+            <p>I can help you streamline the process and find a beautiful home!</p>
+        </div>
+        <div class="wrap-right">
+            <a href="#" class="btn waves waves-effect waves-light wrap-btn">Schedule a Showing</a>
+        </div>
+    </section>
+
+
+    <footer class="contact-form-container z-depth-5">
+        <div class="contact-form-header">
+            <h1>Let's Connect</h1>
+        </div>
+        <form class="contact-form" method="post" autocomplete="off">
+            <div class="input-field">
+                <label for="name">Name</label>
+                <input class="name" name="name" type="text" id="input_text" data-length="50" >
+            </div>
+            <div class="input-field">
+                <label for="name">Email</label>
+                <input class="email" name="email" type="email" id="input_text" data-length="50">
+            </div>
+            <div class="input-field">
+                <label for="name">Your Message</label>
+                <textarea name="message" id="textarea2" class="materialize-textarea message" data-length="100"></textarea>
+            </div>
+            <div class="mail-message-container">
+                <strong class="mail-message"></strong>
+            </div>
+            <button type="submit" class="footer-btn waves-effect btn">SUBMIT</button>
+        </form>
+
+        <div class="copyright">
+            <p>Melissa Shields Montana</p>
+            <p>Website Developed by Digital Circle</p>
+            <p class="copyright-text"></p>
+        </div>
+    </footer>
+
+</body>
+</html>
